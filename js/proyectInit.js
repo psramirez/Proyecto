@@ -1,84 +1,38 @@
 (function (){
+	var root = this;
 
 	$(document).ready(function(){
-	   $('input#new-proyect').on('keypress',addProyect);
+	   $('input#new-proyect').on('keypress',PRO_APP.addProyectDOM);
+	});  
 
-
-	function addProyect(){
+	function addProyectDOM(){
 		var text = $.trim($(this).val()); 
 	    if(event.keyCode===13 && text!=''){    	
 	    	proyect = PRO_APP.addProyect(text);
-	    	createLi(proyect);
-
+	    	var $li = PRO_APP.createProyectDOM(proyect);
+	    	$('ul#list-proyects').append($li);
+	    	PRO_APP.render($li);	    	
 	    	$(this).val('');
 	    }
 	};
-	function modProyect(){
+	function modProyectDOM(){
 		var text = $.trim($(this).val());
 		if(event.keyCode===13 && text!=''){ 
-			var idProyect = $(this).parent().attr('id').substring(8);			
+			var idProyect = $(this).parent().attr('id').substring(8);//div			
 			var proyect = PRO_APP.modProyect(idProyect,text);
 			$(this).next().text(proyect.getTitle());//span
 			$div = $(this).parent();
 			$div.attr('mode','read');
-			render($div);
+			PRO_APP.render($div.parent());
 		}
 	}
-
-	function delProyect(){
-		console.log(borrado);
-	}
-
-	function createLi(proyect){
-		/*CREACION*/		
-		var $li = $('<li>');
-		var $div = $('<div id="proyect-'+proyect.getId()+'"  mode="read">');
-		
-		var $input = $('<input type="text">');			
-			$input.on('keypress',modProyect);
-
-		var $span = $('<span>'+proyect.getTitle()+'</span>');
-			$span.on('dblclick',function(){	
-				$div.attr('mode','edit');
-				$input.val(proyect.getTitle()); 
-				$input.focus();	
-				render($div);							
-			});
-
-
-		var $button = $('<button >x</button>');
-			$button.on('click',function(){
-				var idProyect = $div.attr('id').substring(8);
-				PRO_APP.delProyect(idProyect);//dominio
-
-				$li.remove();
-			});
-
-		/*AÑADIR AL DOM*/
-		$div.append($input);	
-		$div.append($span);
-		$div.append($button);
-
-		$li.append($div);	
-		$('ul#list-proyects').append($li);
-
-		render($div);		
-	};
-
-	function render($div){		
-		if($div.attr('mode')==='read'){
-			$div.find('input').addClass('hidden').removeClass('view');
-			$div.find('span').addClass('view').removeClass('hidden');
-			$div.find('button').addClass('hidden').removeClass('view');
-		}else if($div.attr('mode')==='edit'){			
-			$div.find('input').addClass('view').removeClass('hidden');
-			$div.find('span').addClass('hidden').removeClass('view');
-			$div.find('button').addClass('view').removeClass('hidden');
-		}
-	}
+	
 	 
 
-	});
-
-})();
-
+	 if (!root.PRO_APP) {
+        root.PRO_APP = {};
+    }
+    root.PRO_APP.addProyectDOM = addProyectDOM;
+    root.PRO_APP.modProyectDOM = modProyectDOM;    
+    
+}).call(this);
