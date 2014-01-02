@@ -1,0 +1,400 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"di",
+				"display"
+			],
+			[
+				"get",
+				"getTitle"
+			],
+			[
+				"id",
+				"idProyect"
+			],
+			[
+				"pro",
+				"proyect"
+			],
+			[
+				"tas",
+				"taskid"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "proyectInit.js",
+			"settings":
+			{
+				"buffer_size": 1472,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/Drive/2Daw/01_Cliente(javier)/jquery/00_resumen.js",
+			"settings":
+			{
+				"buffer_size": 7123,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/Documents/GitHub/todo-list-daw2/php/www/js/todoUI.js",
+			"settings":
+			{
+				"buffer_size": 2735,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "css/myStyle.css",
+			"settings":
+			{
+				"buffer_size": 52,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "proyectos.html",
+			"settings":
+			{
+				"buffer_size": 764,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 196.0,
+		"selected_items":
+		[
+			[
+				"Package Control: re",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/D/Documents/GitHub/OficinaOnline/Proyecto/js/proyectInit.js",
+		"/D/Documents/GitHub/OficinaOnline/Proyecto/test/test.html",
+		"/D/Documents/GitHub/OficinaOnline/Proyecto/proyectos.html",
+		"/D/Documents/GitHub/OficinaOnline/git/php/Pablo/proyectos/proyectos.html",
+		"/D/Documents/GitHub/OficinaOnline/git/php/Pablo/proyectos/proyectInit.js",
+		"/D/Drive/2Daw/01_Cliente(javier)/jquery/00_resumen.js",
+		"/D/Documents/GitHub/OficinaOnline/git/php/Pablo/proyectos/proyectDomain.js",
+		"/D/Documents/GitHub/OficinaOnline/git/php/Pablo/proyectos/test/proyectTestDomain.js",
+		"/D/Documents/GitHub/OficinaOnline/git/php/Pablo/proyectos/test/test.html",
+		"/D/Documents/GitHub/OficinaOnline/git/php/Pablo/Dominios/test/testDomainProyect.js",
+		"/D/Documents/GitHub/OficinaOnline/git/php/Pablo/Dominios/domainproyect.js",
+		"/D/Drive/2Daw/01_Cliente(javier)/jquery/02_test.html",
+		"/D/Drive/2Daw/01_Cliente(javier)/jquery/01_template.html",
+		"/D/Documents/GitHub/todo-list-daw2/php/www/js/todoUI.js",
+		"/D/Documents/GitHub/todo-list-daw2/php/www/js/init.js",
+		"/D/Documents/GitHub/todo-list-daw2/php/www/js/todo.js",
+		"/D/Documents/GitHub/librojquery/ejercicios/soluciones/tabs.js",
+		"/D/Drive/2Daw/01_Cliente(javier)/javascript/18_jquery.js",
+		"/D/Drive/2Daw/01_Cliente(javier)/jquery/05_selectors.html",
+		"/D/Documents/GitHub/librojquery/ejercicios/css/sandbox.css",
+		"/D/Drive/2Daw/01_Cliente(javier)/jquery/04_windows_load.html",
+		"/D/Drive/2Daw/01_Cliente(javier)/jquery/05_window_unload.html",
+		"/D/Drive/2Daw/01_Cliente(javier)/jquery/03_load.html",
+		"/D/Drive/2Daw/01_Cliente(javier)/jquery/02_document_ready.html",
+		"/D/Drive/2Daw/01_Cliente(javier)/jquery/01_intro.html",
+		"/D/Drive/2Daw/01_Cliente(javier)/jquery/jquery.js",
+		"/D/Documents/GitHub/oficinaonline/git/php/Dominios/domainproyect.js",
+		"/D/Documents/GitHub/oficinaonline/git/php/Dominios/test/index.html",
+		"/D/Documents/GitHub/OficinaOnline/git/php/test/index.html",
+		"/D/Documents/GitHub/oficinaonline/git/php/test/testDomainProyect.js",
+		"/D/Documents/GitHub/OficinaOnline/git/php/test/js/domainProyect.js",
+		"/D/Documents/GitHub/proyectoBoot/index.html",
+		"/D/Drive/2Daw/server/proyectoBoot/index.html",
+		"/D/Drive/2Daw/server/bootstrap/dist/00_plantilla.html",
+		"/D/Drive/2Daw/server/bootstrap/dist/03_reordenando grid.html",
+		"/D/Drive/2Daw/server/bootstrap/dist/02_columnas anidadas.html",
+		"/D/Drive/2Daw/server/bootstrap/dist/04_tipografia.html",
+		"/D/Drive/2Daw/server/bootstrap/dist/05_visivilidad.html",
+		"/D/Drive/2Daw/server/bootstrap/dist/01_intro.html",
+		"/D/Drive/2Daw/00_Trucos y Herramientas/02_Atajos_SublimeText.js",
+		"/D/Drive/2Daw/server/bootstrap/dist/01_grid.html",
+		"/C/Users/pablo/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/pablo/AppData/Roaming/Sublime Text 2/Packages/View In Browser/View In Browser.sublime-settings",
+		"/D/Downloads/SDFA.html"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"domainproyect.js"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"cal",
+			"addTodoUI",
+			"container",
+			"render()",
+			"addTodoUI",
+			"proyects",
+			"Proyects",
+			"proyects",
+			"Proyects",
+			"proyects",
+			"Proyects",
+			"proyects",
+			"col"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "proyectInit.js",
+					"settings":
+					{
+						"buffer_size": 1472,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1232,
+								1232
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 513.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/D/Drive/2Daw/01_Cliente(javier)/jquery/00_resumen.js",
+					"settings":
+					{
+						"buffer_size": 7123,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3361,
+								3333
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 615.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/D/Documents/GitHub/todo-list-daw2/php/www/js/todoUI.js",
+					"settings":
+					{
+						"buffer_size": 2735,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								572,
+								568
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 285.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "css/myStyle.css",
+					"settings":
+					{
+						"buffer_size": 52,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								50,
+								50
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "proyectos.html",
+					"settings":
+					{
+						"buffer_size": 764,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								764,
+								764
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 172.0,
+	"status_bar_visible": true
+}
