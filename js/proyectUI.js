@@ -4,12 +4,14 @@
 	
 	function createProyectDOM(proyect){
 		/*CREACION*/		
-		var $li = $('<li>');		
-
+		var $li = $('<li>');
+		
 		var $div = $('<div id="proyect-'+proyect.getId()+'"  mode="read">');
+			$li.append($div);
 		
 		var $input = $('<input type="text" >');			
 			$input.on('keypress',PRO_APP.modProyectDOM);
+			$div.append($input);	
 
 		var $span = $('<span>'+proyect.getTitle()+'</span>');
 			$span.on('dblclick',function(){	
@@ -18,21 +20,19 @@
 				$input.focus();	
 				render($li);							
 			});
+			$div.append($span);
 
 
 		var $button = $('<button >x</button>');
 			$button.on('click',function(){
-				var idProyect = $div.attr('id').substring(8);
-				PRO_APP.delProyect(idProyect);
-
-				$li.remove();
+				PRO_APP.delProyectDOM($div);
 			});
 
-		/*AÑADIR AL DOM*/		
-		$div.append($input);	
-		$div.append($span);
+		
+		
+		
 		$div.append($button);
-		$li.append($div);
+		
 
 		return $li;				
 	};

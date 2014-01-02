@@ -26,7 +26,12 @@
 			PRO_APP.render($div.parent());
 		}
 	}
-	
+
+	function delProyectDOM($div){
+		var idProyect = $div.attr('id').substring(8);
+		PRO_APP.delProyect(idProyect);
+		$div.parent().remove();
+	}	
 	 
 
 	 if (!root.PRO_APP) {
@@ -34,5 +39,6 @@
     }
     root.PRO_APP.addProyectDOM = addProyectDOM;
     root.PRO_APP.modProyectDOM = modProyectDOM;    
+    root.PRO_APP.delProyectDOM = delProyectDOM;    
     
 }).call(this);
