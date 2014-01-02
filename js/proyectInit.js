@@ -30,8 +30,7 @@
 	}
 
 	function createLi(proyect){
-		/*CREACION*/
-		var that = this;
+		/*CREACION*/		
 		var $li = $('<li>');
 		var $div = $('<div id="proyect-'+proyect.getId()+'"  mode="read">');
 		
