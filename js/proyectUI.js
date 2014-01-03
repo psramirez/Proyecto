@@ -2,59 +2,83 @@
 	var root = this;
 	
 	
-	function createProyectDOM(proyect){
+	function createItem(proyect){
 		/*CREACION*/		
-		var $li = $('<li>');
+		var $item = $('<a href="#proyect-'+proyect.getId()+'" class="list-group-item">');
+			$item.on('dblclick',function(){	
+				PRO_APP.editItem($item);				
+			});
 		
-		var $div = $('<div id="proyect-'+proyect.getId()+'"  mode="read">');
-			$li.append($div);
+		var $div = $('<div name="proyect" id="proyect-'+proyect.getId()+'"  mode="read" class="row">');
+			$item.append($div);
+			
 		
-		var $input = $('<input type="text" >');			
-			$input.on('keypress',PRO_APP.modProyectDOM);
+		var $input = $('<input type="text" name="mod-proyect">');			
+			$input.on('keypress',function(){
+				PRO_APP.modProyectDOM($item);
+			});
 			$div.append($input);	
 
-		var $span = $('<span>'+proyect.getTitle()+'</span>');
-			$span.on('dblclick',function(){	
-				$div.attr('mode','edit');
-				$input.val(proyect.getTitle()); 
-				$input.focus();	
-				render($li);							
-			});
+		var $span = $('<span name="name-proyect"class="glyphicon glyphicon-briefcase">'+proyect.getTitle()+'</span>');
 			$div.append($span);
 
 
-		var $button = $('<button >x</button>');
+		var $button = $('<button name="del-proyect"class="glyphicon glyphicon-remove btn btn-danger"> </button>');
 			$button.on('click',function(){
 				PRO_APP.delProyectDOM($div);
-			});
+			});		
+			$div.append($button);
 
+		var $badge = $('<span name="count-tasks"class="badge">0<span>');
+			$div.append($badge);		
 		
-		
-		
-		$div.append($button);
 		
 
-		return $li;				
+		return $item;				
 	};
 
-	function render($li){	
-		var $div = $li.find('div');
+	function editItem($item){
+		var $div = $item.find('div[name="proyect"]');
+		var $input = $item.find('input[name="mod-proyect"]');
+		var $span = $item.find('span[name="name-proyect"]');
+
+		$div.attr('mode','edit');
+		$input.val($span.text()); 
+		$input.focus();		
+		PRO_APP.renderItem($item);
+	}
+
+
+	function renderItem($item){			
+		var $div = $item.find('div[name="proyect"]');
+		var $input = $item.find('input[name="mod-proyect"]');
+		var $span = $item.find('span[name="name-proyect"]');
+		var $button = $item.find('button[name="del-proyect"]');
+		var $badge = $item.find('span[name="count-tasks"]');
+		
 		if($div.attr('mode')==='read'){
-			$div.find('input').addClass('hidden').removeClass('view');
-			$div.find('span').addClass('view').removeClass('hidden');
-			$div.find('button').addClass('hidden').removeClass('view');
+			$input.addClass('hidden').removeClass('view');
+			$span.addClass('view').removeClass('hidden');
+			$button.addClass('hidden').removeClass('view');
+			$badge.addClass('view').removeClass('hidden');			
 		}else if($div.attr('mode')==='edit'){			
-			$div.find('input').addClass('view').removeClass('hidden');
-			$div.find('span').addClass('hidden').removeClass('view');
-			$div.find('button').addClass('view').removeClass('hidden');
+			$input.addClass('view').removeClass('hidden');
+			$span.addClass('hidden').removeClass('view');
+			$button.addClass('view').removeClass('hidden');	
+			$badge.addClass('hidden').removeClass('view');
+
+		}else{
+
 		}
+		return $item;
 	}
 	 
 
 	 if (!root.PRO_APP) {
         root.PRO_APP = {};
     }
-    root.PRO_APP.createProyectDOM = createProyectDOM;
-    root.PRO_APP.render = render; 
+    root.PRO_APP.createItem = createItem;
+    root.PRO_APP.editItem = editItem;
+    root.PRO_APP.renderItem = renderItem; 
     
 }).call(this);

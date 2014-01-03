@@ -9,21 +9,25 @@
 		var text = $.trim($(this).val()); 
 	    if(event.keyCode===13 && text!=''){    	
 	    	proyect = PRO_APP.addProyect(text);
-	    	var $li = PRO_APP.createProyectDOM(proyect);
-	    	$('ul#list-proyects').append($li);
-	    	PRO_APP.render($li);	    	
+	    	var $item = PRO_APP.createItem(proyect);
+	    	$('div#list-proyects').append($item);
+	    	PRO_APP.renderItem($item);	    	
 	    	$(this).val('');
 	    }
 	};
-	function modProyectDOM(){
-		var text = $.trim($(this).val());
+	function modProyectDOM($item){
+		var $div = $item.find('div[name="proyect"]');
+		var $input = $item.find('input[name="mod-proyect"]');
+		var $span = $item.find('span[name="name-proyect"]');
+
+
+		var text = $.trim($input.val());
 		if(event.keyCode===13 && text!=''){ 
-			var idProyect = $(this).parent().attr('id').substring(8);//div			
+			var idProyect = $div.attr('id').substring(8);
 			var proyect = PRO_APP.modProyect(idProyect,text);
-			$(this).next().text(proyect.getTitle());//span
-			$div = $(this).parent();
+			$span.text(proyect.getTitle());
 			$div.attr('mode','read');
-			PRO_APP.render($div.parent());
+			PRO_APP.renderItem($item);
 		}
 	}
 

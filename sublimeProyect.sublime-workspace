@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"del",
+				"delProyectDOM"
+			],
+			[
 				"di",
 				"display"
 			],
@@ -28,26 +32,18 @@
 	"buffers":
 	[
 		{
-			"file": "proyectInit.js",
+			"file": "js/proyectInit.js",
 			"settings":
 			{
-				"buffer_size": 1472,
+				"buffer_size": 1196,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/D/Drive/2Daw/01_Cliente(javier)/jquery/00_resumen.js",
+			"file": "js/proyectDomain.js",
 			"settings":
 			{
-				"buffer_size": 7123,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/D/Documents/GitHub/todo-list-daw2/php/www/js/todoUI.js",
-			"settings":
-			{
-				"buffer_size": 2735,
+				"buffer_size": 1593,
 				"line_ending": "Windows"
 			}
 		},
@@ -55,7 +51,7 @@
 			"file": "css/myStyle.css",
 			"settings":
 			{
-				"buffer_size": 52,
+				"buffer_size": 53,
 				"line_ending": "Windows"
 			}
 		},
@@ -63,7 +59,7 @@
 			"file": "proyectos.html",
 			"settings":
 			{
-				"buffer_size": 764,
+				"buffer_size": 1538,
 				"line_ending": "Windows"
 			}
 		}
@@ -104,12 +100,19 @@
 	},
 	"file_history":
 	[
+		"/D/Documents/GitHub/todo-list-daw2/php/www/js/todoUI.js",
+		"/D/Documents/GitHub/OficinaOnline/Proyecto/proyectos.html",
+		"/D/Documents/GitHub/OficinaOnline/Proyecto/js/proyectUI.js",
+		"/D/Documents/GitHub/OficinaOnline/Proyecto/test/proyectTestDomain.js",
+		"/D/Drive/2Daw/01_Cliente(javier)/jquery/00_resumen.js",
+		"/D/Documents/GitHub/sb-admin/sb-admin/bootstrap-elements.html",
+		"/D/Documents/GitHub/proyectoBoot/index.html",
+		"/D/Documents/GitHub/OficinaOnline/Proyecto/css/myStyle.css",
+		"/D/Documents/GitHub/OficinaOnline/Proyecto/proyectInit.js",
 		"/D/Documents/GitHub/OficinaOnline/Proyecto/js/proyectInit.js",
 		"/D/Documents/GitHub/OficinaOnline/Proyecto/test/test.html",
-		"/D/Documents/GitHub/OficinaOnline/Proyecto/proyectos.html",
 		"/D/Documents/GitHub/OficinaOnline/git/php/Pablo/proyectos/proyectos.html",
 		"/D/Documents/GitHub/OficinaOnline/git/php/Pablo/proyectos/proyectInit.js",
-		"/D/Drive/2Daw/01_Cliente(javier)/jquery/00_resumen.js",
 		"/D/Documents/GitHub/OficinaOnline/git/php/Pablo/proyectos/proyectDomain.js",
 		"/D/Documents/GitHub/OficinaOnline/git/php/Pablo/proyectos/test/proyectTestDomain.js",
 		"/D/Documents/GitHub/OficinaOnline/git/php/Pablo/proyectos/test/test.html",
@@ -117,7 +120,6 @@
 		"/D/Documents/GitHub/OficinaOnline/git/php/Pablo/Dominios/domainproyect.js",
 		"/D/Drive/2Daw/01_Cliente(javier)/jquery/02_test.html",
 		"/D/Drive/2Daw/01_Cliente(javier)/jquery/01_template.html",
-		"/D/Documents/GitHub/todo-list-daw2/php/www/js/todoUI.js",
 		"/D/Documents/GitHub/todo-list-daw2/php/www/js/init.js",
 		"/D/Documents/GitHub/todo-list-daw2/php/www/js/todo.js",
 		"/D/Documents/GitHub/librojquery/ejercicios/soluciones/tabs.js",
@@ -135,7 +137,6 @@
 		"/D/Documents/GitHub/OficinaOnline/git/php/test/index.html",
 		"/D/Documents/GitHub/oficinaonline/git/php/test/testDomainProyect.js",
 		"/D/Documents/GitHub/OficinaOnline/git/php/test/js/domainProyect.js",
-		"/D/Documents/GitHub/proyectoBoot/index.html",
 		"/D/Drive/2Daw/server/proyectoBoot/index.html",
 		"/D/Drive/2Daw/server/bootstrap/dist/00_plantilla.html",
 		"/D/Drive/2Daw/server/bootstrap/dist/03_reordenando grid.html",
@@ -155,9 +156,10 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 93.0,
 		"where_history":
 		[
+			"modProyectDOM",
 			"domainproyect.js"
 		]
 	},
@@ -166,6 +168,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"modProyect",
+			"addProyect",
+			"render",
+			"container",
 			"cal",
 			"addTodoUI",
 			"container",
@@ -186,6 +192,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			""
 		],
 		"reverse": false,
 		"show_context": true,
@@ -196,23 +203,23 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "proyectInit.js",
+					"file": "js/proyectInit.js",
 					"settings":
 					{
-						"buffer_size": 1472,
+						"buffer_size": 1196,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1232,
-								1232
+								352,
+								352
 							]
 						],
 						"settings":
@@ -221,25 +228,25 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 513.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "/D/Drive/2Daw/01_Cliente(javier)/jquery/00_resumen.js",
+					"file": "js/proyectDomain.js",
 					"settings":
 					{
-						"buffer_size": 7123,
+						"buffer_size": 1593,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3361,
-								3333
+								1023,
+								1023
 							]
 						],
 						"settings":
@@ -249,57 +256,29 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 615.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "/D/Documents/GitHub/todo-list-daw2/php/www/js/todoUI.js",
-					"settings":
-					{
-						"buffer_size": 2735,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								572,
-								568
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 285.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
 					"file": "css/myStyle.css",
 					"settings":
 					{
-						"buffer_size": 52,
+						"buffer_size": 53,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								50,
-								50
+								23,
+								23
 							]
 						],
 						"settings":
 						{
-							"auto_name": "",
 							"syntax": "Packages/CSS/CSS.tmLanguage"
 						},
 						"translation.x": 0.0,
@@ -309,19 +288,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 3,
 					"file": "proyectos.html",
 					"settings":
 					{
-						"buffer_size": 764,
+						"buffer_size": 1538,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								764,
-								764
+								405,
+								405
 							]
 						],
 						"settings":
