@@ -6,7 +6,7 @@
 		/*CREACION*/		
 		var $item = $('<a href="#/proyect-'+proyect.getId()+'" name="item" class="list-group-item">');
 			$item.on('dblclick',function(){	
-				PRO_APP.editItem($item);				
+				PRO_APP.editItem($item);							
 			});			
 			$item.on('click',function(){										
 				PRO_APP.renderContext();
@@ -56,9 +56,9 @@
 		var $span = $item.find('span[name="name-proyect"]');
 
 		$div.data('mode','edit');
-		$input.val($span.text()); 
-		$input.focus();		
+		$input.val($span.text()); 	
 		PRO_APP.renderItem($item);
+		$input.focus();	
 	}
 
 

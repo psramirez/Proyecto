@@ -2,7 +2,12 @@
 	var root = this;
 
 	$(document).ready(function(){
-	   $('input#new-proyect').on('keypress',PRO_APP.addProyectDOM);	   
+		//CREACION DE PROYECTOS
+	   $('input#new-proyect')
+	   	.on('keypress',PRO_APP.addProyectDOM);	
+	   //DRAG AND DROP
+	   $( "#list-proyects" ).sortable();
+       $( "#list-proyects" ).disableSelection();   
 	});  
 
 	function addProyectDOM(){
@@ -40,7 +45,7 @@
 
 	function renderContext(){
 		$items = $('div#list-proyects a');
-		$items.removeClass('active')
+		$items.removeClass('active','slow')
 			.data('mode','read');
 		/*$items.each(function() {
 			console.log($(this));
