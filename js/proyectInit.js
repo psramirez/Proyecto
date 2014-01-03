@@ -2,7 +2,7 @@
 	var root = this;
 
 	$(document).ready(function(){
-	   $('input#new-proyect').on('keypress',PRO_APP.addProyectDOM);
+	   $('input#new-proyect').on('keypress',PRO_APP.addProyectDOM);	   
 	});  
 
 	function addProyectDOM(){
@@ -20,21 +20,37 @@
 		var $input = $item.find('input[name="mod-proyect"]');
 		var $span = $item.find('span[name="name-proyect"]');
 
-
 		var text = $.trim($input.val());
 		if(event.keyCode===13 && text!=''){ 
 			var idProyect = $div.attr('id').substring(8);
+			console.log(idProyect);
 			var proyect = PRO_APP.modProyect(idProyect,text);
 			$span.text(proyect.getTitle());
-			$div.attr('mode','read');
+			$div.data('mode','read');
 			PRO_APP.renderItem($item);
 		}
 	}
 
-	function delProyectDOM($div){
+	function delProyectDOM($item){
+		var $div = $item.find('div[name="proyect"]');
 		var idProyect = $div.attr('id').substring(8);
 		PRO_APP.delProyect(idProyect);
-		$div.parent().remove();
+		$item.remove();
+	}
+
+	function renderContext(){
+		$items = $('div#list-proyects a');
+		$items.removeClass('active')
+			.data('mode','read');
+		/*$items.each(function() {
+			console.log($(this));
+  			PRO_APP.renderItem($(this));
+		});	*/
+
+		var pattern = "#/proyect-";
+    	var pos = window.location.hash.indexOf(pattern);
+    	var proyectId = window.location.hash.substring(pos + pattern.length);
+    	//console.log(filter);
 	}	
 	 
 
@@ -44,5 +60,6 @@
     root.PRO_APP.addProyectDOM = addProyectDOM;
     root.PRO_APP.modProyectDOM = modProyectDOM;    
     root.PRO_APP.delProyectDOM = delProyectDOM;    
+    root.PRO_APP.renderContext = renderContext;    
     
 }).call(this);

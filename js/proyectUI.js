@@ -4,35 +4,48 @@
 	
 	function createItem(proyect){
 		/*CREACION*/		
-		var $item = $('<a href="#proyect-'+proyect.getId()+'" class="list-group-item">');
+		var $item = $('<a href="#/proyect-'+proyect.getId()+'" name="item" class="list-group-item">');
 			$item.on('dblclick',function(){	
 				PRO_APP.editItem($item);				
+			});			
+			$item.on('click',function(){										
+				PRO_APP.renderContext();
+				$(this).addClass('active');				
 			});
 		
-		var $div = $('<div name="proyect" id="proyect-'+proyect.getId()+'"  mode="read" class="row">');
+		var $div = $('<div name="proyect" id="proyect-'+proyect.getId()+'"  data-mode="read" class="row">');
 			$item.append($div);
+
+		var $divIcon = $('<div class="col-sm-1">');
+		var $icon = $('<span name="icon" class="glyphicon glyphicon-book">')
+			$div.append($divIcon)
+			$divIcon.append($icon);
+
+		var $divSpan = $('<div class="col-sm-8">');
+		var $span = $('<span name="name-proyect">'+proyect.getTitle()+'</span>');
+			$div.append($divSpan)
+			$divSpan.append($span);
+
+		var $divBadge = $('<div class="col-sm-1">');
+		var $badge = $('<span name="count-tasks"class="badge">0<span>');
+			$div.append($divBadge)
+			$divBadge.append($badge);
 			
-		
-		var $input = $('<input type="text" name="mod-proyect">');			
+		var $divInput = $('<div class="col-sm-8">');		
+		var $input = $('<input type="text" name="mod-proyect" class="form-control">');			
 			$input.on('keypress',function(){
 				PRO_APP.modProyectDOM($item);
-			});
-			$div.append($input);	
+			});			
+			$div.append($divInput)
+			$divInput.append($input);		
 
-		var $span = $('<span name="name-proyect"class="glyphicon glyphicon-briefcase">'+proyect.getTitle()+'</span>');
-			$div.append($span);
-
-
+		var $divButton = $('<div class="col-sm-2">');
 		var $button = $('<button name="del-proyect"class="glyphicon glyphicon-remove btn btn-danger"> </button>');
 			$button.on('click',function(){
-				PRO_APP.delProyectDOM($div);
+				PRO_APP.delProyectDOM($item);
 			});		
-			$div.append($button);
-
-		var $badge = $('<span name="count-tasks"class="badge">0<span>');
-			$div.append($badge);		
-		
-		
+			$div.append($divButton)
+			$divButton.append($button);
 
 		return $item;				
 	};
@@ -42,7 +55,7 @@
 		var $input = $item.find('input[name="mod-proyect"]');
 		var $span = $item.find('span[name="name-proyect"]');
 
-		$div.attr('mode','edit');
+		$div.data('mode','edit');
 		$input.val($span.text()); 
 		$input.focus();		
 		PRO_APP.renderItem($item);
@@ -52,24 +65,25 @@
 	function renderItem($item){			
 		var $div = $item.find('div[name="proyect"]');
 		var $input = $item.find('input[name="mod-proyect"]');
-		var $span = $item.find('span[name="name-proyect"]');
+		var $span = $item.find('span[name="name-proyect"]');;
+		var $icon = $item.find('span[name="icon"]');;
 		var $button = $item.find('button[name="del-proyect"]');
-		var $badge = $item.find('span[name="count-tasks"]');
+		var $badge = $item.find('span[name="count-tasks"]');;
 		
-		if($div.attr('mode')==='read'){
+		if($div.data('mode')==='read'){			
 			$input.addClass('hidden').removeClass('view');
 			$span.addClass('view').removeClass('hidden');
+			$icon.addClass('view').removeClass('hidden');
 			$button.addClass('hidden').removeClass('view');
 			$badge.addClass('view').removeClass('hidden');			
-		}else if($div.attr('mode')==='edit'){			
+		}else if($div.data('mode')==='edit'){			
 			$input.addClass('view').removeClass('hidden');
 			$span.addClass('hidden').removeClass('view');
+			$icon.addClass('hidden').removeClass('view');
 			$button.addClass('view').removeClass('hidden');	
 			$badge.addClass('hidden').removeClass('view');
 
-		}else{
-
-		}
+		}		
 		return $item;
 	}
 	 
