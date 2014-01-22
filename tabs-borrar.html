@@ -1,0 +1,32 @@
+$('#tabs a:first').tab('show');
+       $('#tabs a').click(function () {		  
+		  $(this).tab('show')
+		});    
+       $('#tabs').sortable();
+       $('#tabs').disableSelection(); 
+sadfsf
+
+ <!--PESTAÑAS-->
+            <div class="col-lg-4">
+            <div class="panel panel-primary">
+
+              <ul class="nav nav-tabs" id="tabs">
+                <li><a href="#tab-gmail" data-tooggle="tab">Gmail</a></li>
+                <li><a href="#tab-drive" data-tooggle="tab">Drive</a></li>
+                <li><a href="#tab-calendar" data-tooggle="tab">Calendar</a></li>
+              </ul>
+              <div class="tab-content">
+                <div id="tab-gmail" class="tab-pane">
+                  <p>este es el texto para la tab1</p>
+                </div>
+                <div id="tab-drive" class="tab-pane">
+                  <p>este es el texto para la tab2</p>
+                </div>
+                <div id="tab-calendar" class="tab-pane">
+                  <p>este es el texto para la tab3</p>
+                </div>
+              </div>
+
+
+            </div>
+          </div>

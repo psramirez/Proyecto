@@ -35,7 +35,7 @@
 			"file": "js/proyectInit.js",
 			"settings":
 			{
-				"buffer_size": 1196,
+				"buffer_size": 1954,
 				"line_ending": "Windows"
 			}
 		},
@@ -51,7 +51,7 @@
 			"file": "css/myStyle.css",
 			"settings":
 			{
-				"buffer_size": 53,
+				"buffer_size": 0,
 				"line_ending": "Windows"
 			}
 		},
@@ -59,7 +59,7 @@
 			"file": "proyectos.html",
 			"settings":
 			{
-				"buffer_size": 1538,
+				"buffer_size": 1542,
 				"line_ending": "Windows"
 			}
 		}
@@ -156,7 +156,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 93.0,
+		"height": 0.0,
 		"where_history":
 		[
 			"modProyectDOM",
@@ -211,15 +211,15 @@
 					"file": "js/proyectInit.js",
 					"settings":
 					{
-						"buffer_size": 1196,
+						"buffer_size": 1954,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								352,
-								352
+								0,
+								0
 							]
 						],
 						"settings":
@@ -266,15 +266,15 @@
 					"file": "css/myStyle.css",
 					"settings":
 					{
-						"buffer_size": 53,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								23,
-								23
+								0,
+								0
 							]
 						],
 						"settings":
@@ -292,15 +292,15 @@
 					"file": "proyectos.html",
 					"settings":
 					{
-						"buffer_size": 1538,
+						"buffer_size": 1542,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								405,
-								405
+								0,
+								0
 							]
 						],
 						"settings":

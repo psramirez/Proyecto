@@ -6,8 +6,10 @@
 	   $('input#new-proyect')
 	   	.on('keypress',PRO_APP.addProyectDOM);	
 	   //DRAG AND DROP
-	   $( "#list-proyects" ).sortable();
-       $( "#list-proyects" ).disableSelection();   
+	   $('#list-proyects').sortable();
+       $('#list-proyects').disableSelection(); 
+
+       
 	});  
 
 	function addProyectDOM(){
@@ -27,8 +29,7 @@
 
 		var text = $.trim($input.val());
 		if(event.keyCode===13 && text!=''){ 
-			var idProyect = $div.attr('id').substring(8);
-			console.log(idProyect);
+			var idProyect = $div.attr('id').substring(8);			
 			var proyect = PRO_APP.modProyect(idProyect,text);
 			$span.text(proyect.getTitle());
 			$div.data('mode','read');
@@ -52,7 +53,7 @@
   			PRO_APP.renderItem($(this));
 		});	*/
 
-		var pattern = "#/proyect-";
+		var pattern = "#proyect-";
     	var pos = window.location.hash.indexOf(pattern);
     	var proyectId = window.location.hash.substring(pos + pattern.length);
     	//console.log(filter);

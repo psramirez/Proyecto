@@ -4,7 +4,7 @@
 	
 	function createItem(proyect){
 		/*CREACION*/		
-		var $item = $('<a href="#/proyect-'+proyect.getId()+'" name="item" class="list-group-item">');
+		var $item = $('<a href="#proyect-'+proyect.getId()+'" name="item" class="list-group-item">');
 			$item.on('dblclick',function(){	
 				PRO_APP.editItem($item);							
 			});			
